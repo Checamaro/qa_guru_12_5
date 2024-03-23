@@ -18,7 +18,7 @@ def test_form():
     browser.element('.react-datepicker__day--011').click() # choose date
     browser.element('#subjectsInput').type('Maths').press_enter() # choose subject from drop-menu
     browser.element('[for="hobbies-checkbox-1"]').click() # click hobby checkbox
-    browser.element('#uploadPicture').send_keys(os.path.abspath('img/download.jpeg')) # download picture
+    browser.element('#uploadPicture').send_keys(os.path.abspath('../img/download.jpeg')) # download picture
     browser.element('#currentAddress').type('Saint-Petersburg') # typing address
     browser.element('#react-select-3-input').type('Haryana').press_enter() # choose state from drop-menu
     browser.element('#react-select-4-input').type('Karnal').press_enter() # choose state from drop-menu
